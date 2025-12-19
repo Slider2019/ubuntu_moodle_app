@@ -794,7 +794,7 @@ Moodle detecta que uno está accediendo al sitio por `http://` en lugar de `http
 
 ## Implementando DOCKER (En desarrollo)
 
-<img width="1536" height="1024" alt="Endesarrollo" src="https://github.com/user-attachments/assets/b7d88e2d-0d5c-44ad-9ec9-4dca02169d4c" />
+<img width="1536" height="1024" alt="Endesarrollo2" src="https://github.com/user-attachments/assets/9366845d-6252-4ca2-b274-609c45efcd53" />
 
 ---
 
