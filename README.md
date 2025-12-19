@@ -9,7 +9,7 @@
 [![Platform](https://img.shields.io/badge/Azure-VM-lightblue)](#!)
 [![Platform](https://img.shields.io/badge/Hyper--V-VM-lightblue)](#!)
 
-![Banner del proyecto](image/Banner-1.png)
+<img width="1366" height="768" alt="Banner" src="https://github.com/user-attachments/assets/de812b11-d3c5-457a-93da-f4bbcca104fb" />
 
 > Este README documenta, paso a paso, la implementación de Moodle 4.5 tanto en una   VM local con Hyper-V como en una VM de Azure usando el stack LAMP; Linux, Apache, PHP 8.2 y MySQL interno (sin servicios externos de Azure). Incluye comandos reproducibles, verificación, troubleshooting y recomendaciones.
 
