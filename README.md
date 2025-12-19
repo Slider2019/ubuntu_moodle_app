@@ -96,8 +96,9 @@ Buena base, Diego 👌. Para enriquecer esa sección y mostrar tu versatilidad, 
   - **Red:** NIC con IP pública estática, NSG abriendo 22/80/443.  
   - **Disco:** LRS de HDD Estándar de 64GB.
 
-![alt text](image/1 - Creando instancia VM y recursos.png)
-![alt text](image/2 - Entrando a la instancia por cli de azure-1.png)
+<img width="1920" height="891" alt="1 - Creando instancia VM y recursos" src="https://github.com/user-attachments/assets/9f9c1d48-0132-4a9b-a60e-21c26c3a6586" />
+<img width="1920" height="891" alt="2 - Entrando a la instancia por cli de azure" src="https://github.com/user-attachments/assets/1b2e886c-d2c4-4837-918c-8b0c3de9c773" />
+
 
 - **Post-provisioning (en la VM):**
 
@@ -106,8 +107,9 @@ Buena base, Diego 👌. Para enriquecer esa sección y mostrar tu versatilidad, 
   sudo timedatectl set-timezone America/Santiago
   ```
 
-![alt text](image/5 - descargar e instalar actualizaciones.png)
-![alt text](image/6 - Actualizacion lista ahora reiniciar.png)
+<img width="1920" height="892" alt="5 - descargar e instalar actualizaciones" src="https://github.com/user-attachments/assets/4cd67ab3-2648-442e-95df-76b26b02c906" />
+<img width="1920" height="372" alt="6 - Actualizacion lista ahora reiniciar" src="https://github.com/user-attachments/assets/35d946b3-6274-497a-9cbf-506de744c959" />
+
 
 - **Comprobación de red:**  
 
@@ -116,7 +118,8 @@ Buena base, Diego 👌. Para enriquecer esa sección y mostrar tu versatilidad, 
   ip a
   ```
 
-![alt text](image/4a - Probando RED.png)
+<img width="1920" height="757" alt="4a - Probando RED" src="https://github.com/user-attachments/assets/6da7ecaf-065a-4c4b-af6f-9aba24d42aab" />
+
 
 ---
 
@@ -143,7 +146,8 @@ memory_limit = 256M
 
   ```
 
-![alt text](image/8 - Progreso instalacion.png)
+<img width="1920" height="890" alt="8 - Progreso instalacion" src="https://github.com/user-attachments/assets/08953007-5da0-4f1f-b38f-38867c30d702" />
+
 
 - **Verificar versiones:**
 
@@ -152,7 +156,8 @@ memory_limit = 256M
   apache2 -v
   ```
 
-![alt text](image/8a - Version apache2 y php.png)
+<img width="1106" height="342" alt="8a - Version apache2 y php" src="https://github.com/user-attachments/assets/77c57129-82e7-46f4-b0ba-b954ef1cf608" />
+
 
 ### phpinfo para validar entorno web
 
@@ -166,9 +171,10 @@ memory_limit = 256M
 - **Acceder:** `http://TU-IP/info.php`  
   Verifica “PHP Version 8.2.x” y “Additional .ini files parsed”.
 
-![alt text](image/24 - Verificar version de PHP y agregando un archivo de prueba en el webroot.png)
+<img width="1107" height="374" alt="24 - Verificar version de PHP y agregando un archivo de prueba en el webroot" src="https://github.com/user-attachments/assets/aea13615-71fa-494d-9c5e-75b10e7d6423" />
 
-![alt text](image/25 - phpversion.png)
+<img width="1920" height="1041" alt="25 - phpversion" src="https://github.com/user-attachments/assets/8df5888e-7e33-440f-9fa1-108c48eba704" />
+
 
 ---
 
@@ -186,8 +192,8 @@ memory_limit = 256M
   sudo apt install mysql-server mysql-client
   sudo mysql_secure_installation
   ```
-
-![alt text](image/11 - Instalando MySQL.png)
+  
+<img width="1920" height="891" alt="11 - Instalando MySQL" src="https://github.com/user-attachments/assets/b84e86d6-d9f1-4b73-894d-3c3b2109a6c9" />
 
 ### Crear base y usuario para Moodle
 
@@ -206,7 +212,8 @@ memory_limit = 256M
   FLUSH PRIVILEGES;
   ```
 
-![alt text](image/15 - Configurando la base de datos y agregando usuario.png)
+<img width="1090" height="742" alt="15 - Configurando la base de datos y agregando usuario" src="https://github.com/user-attachments/assets/87ecd2ca-78fd-43e1-81f2-16fa81715dd0" />
+
 
 >⚠️ Por seguridad, los nombres de usuario y contraseñas han sido ocultados. En producción, nunca publiques credenciales reales en capturas ni documentación.
 
@@ -237,7 +244,8 @@ memory_limit = 256M
    sudo git checkout MOODLE_405_STABLE
    ```
 
-![alt text](image/12 - Instalando moodle.png)
+<img width="1920" height="893" alt="12 - Instalando moodle" src="https://github.com/user-attachments/assets/a5af9ef2-4b40-4670-b0b0-2d476e9ac83a" />
+
 
 ### Preparar `moodledata` y VirtualHost
 
@@ -250,15 +258,16 @@ memory_limit = 256M
    sudo chmod -R 0755 /var/www/html/moodle
    ```
 
-![alt text](image/14 - Mover Moodle al webroot.png)
+<img width="1920" height="332" alt="14 - Mover Moodle al webroot" src="https://github.com/user-attachments/assets/e396c466-7004-4a7e-a377-fc0583053624" />
+
 
 - **Acceder al instalador de Moodle via web:** abrir en el navegador `http://IP_PUBLICA_DE_TU_VM/moodle`<br>
   Luego seguir las instrucciones en pantalla: idioma, ruta de datos, ruta de base de datos.
 
 - Usar `/var/moodledata` como directorio de datos.
 
-![alt text](image/17 - configurar moodle.png)
-![alt text](image/18 - Directorio de datos-1.png)
+<img width="1920" height="1041" alt="17 - configurar moodle" src="https://github.com/user-attachments/assets/47915205-c918-4921-97ba-0a5c3d39541f" />
+<img width="1306" height="362" alt="18 - Directorio de datos-1" src="https://github.com/user-attachments/assets/0963f09b-97b8-4ce2-b15f-d3232eddeb78" />
 
 ### Configuración de base de datos en el instalador
 
@@ -272,16 +281,16 @@ memory_limit = 256M
   - **Prefijo tablas:** `mdl_` (por defecto)
   - **Puerto:** vacío (usa 3306)
 
-![alt text](image/19 - seleccionando la bae de datos.png)
-![alt text](image/20 - configuracion.png)
-![alt text](image/21 - instalacion.png)
+<img width="1920" height="702" alt="19 - seleccionando la bae de datos" src="https://github.com/user-attachments/assets/aa1f0e6d-25a0-4989-9b08-a377d64b5e8b" />
+<img width="1920" height="1041" alt="20 - configuracion" src="https://github.com/user-attachments/assets/5eb76afb-fcf2-48f2-9f02-7a3ac36cdd40" />
+<img width="1920" height="1041" alt="21 - instalacion" src="https://github.com/user-attachments/assets/cccd27ae-77dc-437e-acf4-a0ac6a3cadbb" />
 
 ---
 
 ## Validaciones del servidor y ajustes clave
 
-![alt text](image/22 - Estado instalacion con revisiones por ver.png)
-![alt text](image/23 - otras comprobaciones.png)
+<img width="701" height="941" alt="22 - Estado instalacion con revisiones por ver" src="https://github.com/user-attachments/assets/d7c0a4ea-83d4-473d-9a3f-24919e5fa651" />
+<img width="1447" height="497" alt="23 - otras comprobaciones" src="https://github.com/user-attachments/assets/069a8da9-cad3-4e10-98fb-fbb1e42f3074" />
 
 >Aquí en este apartado de las comprobaciones del servidor, se muestran los componentes críticos que deben estar instalados para continuar con la siguiente fase. Como se aprecia en la imágen, en `otras comprobaciones`, se muestra que el parámetro de configuración de `max_input_vars` debe quedar en 5000 quedando en estado `revisar`.
 
@@ -295,7 +304,8 @@ memory_limit = 256M
 
 >Reemplazar `x.x` con la versión de php que se haya instalado
 
-![alt text](image/26 - Cambiando la variable en php.ini.png)
+<img width="843" height="392" alt="26 - Cambiando la variable en php ini" src="https://github.com/user-attachments/assets/2abb6b79-a567-49cc-9467-f0d54cff587c" />
+
 
 - **Cambiar valor:**
 
@@ -342,14 +352,15 @@ memory_limit = 256M
 
 - Si luego de iniciar la VM, salta el siguiente error:<br>
 
-![alt text](image/2 - Error en VM hyperv.png)
+<img width="1282" height="1071" alt="2 - Error en VM hyperv" src="https://github.com/user-attachments/assets/cac49d17-c1d3-4f5e-8e98-bd05f6334731" />
+
 
 `Solución`
 
 - Apagar la VM, click derecho sobre la VM -> `Configuración`
 - En configuración ir al apartado `Seguridad` y deshabilitar `Arranque seguro`
 
-![alt text](image/3 - arranque en modo seguro.png)
+<img width="901" height="857" alt="3 - arranque en modo seguro" src="https://github.com/user-attachments/assets/c399e8d9-83d6-4ad2-905b-b2d13a37057f" />
 
 ---
 
@@ -432,7 +443,7 @@ Hay un detalle clave en `Hyper-V` y es que si nuestro switch virtual en Hyper‑
 
 ### 2.`phpenmod soap` avisa ini faltante
 
-![alt text](image/9 - El modulo SOAP no existe.png)
+<img width="1033" height="732" alt="9 - El modulo SOAP no existe" src="https://github.com/user-attachments/assets/829f808a-1f2d-4ba0-acdd-ad0b9a705431" />
 
 - **Síntoma:**  
 
@@ -455,7 +466,8 @@ Hay un detalle clave en `Hyper-V` y es que si nuestro switch virtual en Hyper‑
 
 ## ⚠️Extensión PHP `soap` no desaparece al recargar
 
-![alt text](image/5 - Extension SOAP no desaparece.png)
+<img width="898" height="335" alt="5 - Extension SOAP no desaparece" src="https://github.com/user-attachments/assets/87764403-a519-47ac-b6e1-e3d253e68b27" />
+
 
 **Mensaje:**  
 > “Debería estar instalada y activada para conseguir los mejores resultados.”
@@ -474,7 +486,7 @@ sudo systemctl restart apache2
 
 ## ⚠️ No desaparece el mensaje de `max_input_vars` al recargar Moodle
 
-![alt text](image/6 - el valor del campo maxinputvars no desaparece.png)
+<img width="945" height="457" alt="6 - el valor del campo maxinputvars no desaparece" src="https://github.com/user-attachments/assets/b101ec71-15bc-4adb-9bad-f8aa388c1663" />
 
 **Mensaje:**  
 > “La configuración de PHP max_input_vars debe ser al menos 5000.”
@@ -585,7 +597,7 @@ sudo systemctl restart apache2
 
     - En la lista de módulos cargados, debe aparecer `soap`.
 
-    ![alt text](image/8 - SOAP.png)
+    <img width="1920" height="1041" alt="8 - SOAP" src="https://github.com/user-attachments/assets/09f8e38a-7a32-4494-8d9b-ba98466377e9" />
 
 5. **`max_input_vars` aún no desaparece**  
     - Verificar que el cambio realmente quedó aplicado:  
@@ -621,7 +633,7 @@ sudo systemctl restart apache2
      http://IP-de-la-vm/info.php
      ```
 
-![alt text](image/7 - Version php.png)
+<img width="1920" height="1041" alt="7 - Version php" src="https://github.com/user-attachments/assets/ddfe78ee-740b-4e8b-a3a0-4f490a7677b3" />
 
 - Ahí mostrará un panel completo con la versión de PHP que Apache realmente está usando y la ruta exacta del `php.ini` cargado.
 
@@ -721,7 +733,8 @@ DROP USER 'moodleadmin'@'localhost';
 
 ## Error de SQL durante la configuración de Moodle
 
-![alt text](image/4 - Error SQL en Moodle-1.png)
+<img width="842" height="335" alt="4 - Error SQL en Moodle-1" src="https://github.com/user-attachments/assets/8f0454ae-c096-4230-a6f7-9cef75a642c0" />
+
 
 - **Síntoma:**  
 
