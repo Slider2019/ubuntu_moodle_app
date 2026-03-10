@@ -30,11 +30,6 @@
 - [Créditos y bibliografía](#créditos-y-bibliografía)
 
 ---
-## Herramientas usadas
-
-Buena base, Diego 👌. Para enriquecer esa sección y mostrar tu versatilidad, podrías incluir herramientas técnicas, visuales y de documentación que realmente usaste o que complementan tu enfoque autodidacta. Aquí van algunas sugerencias que encajan perfecto con tu proyecto:
-
----
 
 ## Herramientas usadas
 
